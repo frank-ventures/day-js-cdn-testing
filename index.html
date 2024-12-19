@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Here I'm linking to my app.js as normal -->
+    <script src="app.js" defer></script>
+
+    <!-- Here's importing day.js as a CDN -->
+    <!-- https://day.js.org/docs/en/installation/browser -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+    <!-- Here's importing two day.js plugins as CDNs. Not that the main URL stays the same, just the plugin name changes at the end -->
+    <!-- https://day.js.org/docs/en/plugin/loading-into-browser -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/isoWeek.js"></script>
+    <!-- More plugins can be found here: https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/ -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Playing with Day JS Woo</title>
+  </head>
+  <body>
+    <h1>Take a look at my dates!</h1>
+
+    <!-- A p tag for DOM manipulation -->
+    <p id="my-date"></p>
+
+    <div id="my-day-div"></div>
+
+    <!-- Here's how to write JS straight in our HTML. But probably we'll just want to link our app.js -->
+    <!-- <script>
+      console.log(dayjs().day(0));
+      const myDate = document.getElementById("my-date");
+      myDate.innerHTML = dayjs().month();
+    </script> -->
+  </body>
+</html>
